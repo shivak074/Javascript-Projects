@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/cosmic-background-with-colorful-red-blue-laser-lights-perfect-digital-wallpaper_181624-32667.jpg);
+    background-size: cover;
+}
+.main{
+    width: 27%;
+    height: 27%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    border-radius: 27px;
+    background: none;
+}

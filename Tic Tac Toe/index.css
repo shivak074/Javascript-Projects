@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    flex-direction: column;
+}
+.container{
+    width: 28%;
+    height: 40%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
+    padding: 7px;
+}
+.cell{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+ button{
+    width: 10rem;
+    padding: 10px;
+    margin: 40px 0;
+    border-radius: 9px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 40%; 
+        height: 20%;
+        padding: 7px;
+    }
+
+    .cell {
+        font-size: 18px; 
+        width: 100%;
+    }
+}
