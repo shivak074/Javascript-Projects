@@ -25,73 +25,6 @@ function winnerCheck(){
             break;
         }    
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
     if(tieCheck(board)){
         const winnerMessage = document.createElement('div');
         winnerMessage.textContent = `Draw`;
@@ -102,6 +35,10 @@ function winnerCheck(){
 }
 
 button.onclick = function() {
+    const lastChild = document.body.lastElementChild;
+    if (lastChild) {
+      lastChild.remove();
+    } 
     cells.forEach((cell,index) => {
         cell.value = "";
         board[index] = "";
